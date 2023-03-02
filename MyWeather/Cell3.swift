@@ -1,13 +1,13 @@
 //
-//  FirstCell.swift
+//  Cell3.swift
 //  MyWeather
 //
-//  Created by 심현석 on 2023/03/01.
+//  Created by 심현석 on 2023/03/02.
 //
 
 import UIKit
 
-class Cell: UICollectionViewCell {
+class Cell3: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		8F24E82129AF3ED100567261 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E82029AF3ED100567261 /* DataManager.swift */; };
 		8F24E82329AF454700567261 /* PreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E82229AF454700567261 /* PreView.swift */; };
-		8F24E82529AF4D6100567261 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E82429AF4D6100567261 /* Cell.swift */; };
+		8F24E82529AF4D6100567261 /* Cell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E82429AF4D6100567261 /* Cell1.swift */; };
 		8F24E82729AF4FBC00567261 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F24E82629AF4FBC00567261 /* Header.swift */; };
+		8FAFA4C629B0ED7A00151CEF /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFA4C529B0ED7A00151CEF /* Layout.swift */; };
+		8FAFA4C829B0EEAB00151CEF /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFA4C729B0EEAB00151CEF /* Cell2.swift */; };
+		8FAFA4CA29B0EEB500151CEF /* Cell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFA4C929B0EEB500151CEF /* Cell3.swift */; };
 		8FD9226129AE38CA00CC2176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9226029AE38CA00CC2176 /* AppDelegate.swift */; };
 		8FD9226329AE38CA00CC2176 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9226229AE38CA00CC2176 /* SceneDelegate.swift */; };
 		8FD9226529AE38CA00CC2176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9226429AE38CA00CC2176 /* ViewController.swift */; };
@@ -27,8 +30,11 @@
 		7B618ABF084409621023EB1A /* Pods-MyWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeather.debug.xcconfig"; path = "Target Support Files/Pods-MyWeather/Pods-MyWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		8F24E82029AF3ED100567261 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8F24E82229AF454700567261 /* PreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreView.swift; sourceTree = "<group>"; };
-		8F24E82429AF4D6100567261 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		8F24E82429AF4D6100567261 /* Cell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell1.swift; sourceTree = "<group>"; };
 		8F24E82629AF4FBC00567261 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		8FAFA4C529B0ED7A00151CEF /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		8FAFA4C729B0EEAB00151CEF /* Cell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
+		8FAFA4C929B0EEB500151CEF /* Cell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell3.swift; sourceTree = "<group>"; };
 		8FD9225D29AE38CA00CC2176 /* MyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD9226029AE38CA00CC2176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FD9226229AE38CA00CC2176 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +100,11 @@
 				8FD9226229AE38CA00CC2176 /* SceneDelegate.swift */,
 				8FD9227429AE38EE00CC2176 /* Data.swift */,
 				8F24E82029AF3ED100567261 /* DataManager.swift */,
+				8FAFA4C529B0ED7A00151CEF /* Layout.swift */,
 				8FD9226429AE38CA00CC2176 /* ViewController.swift */,
-				8F24E82429AF4D6100567261 /* Cell.swift */,
+				8F24E82429AF4D6100567261 /* Cell1.swift */,
+				8FAFA4C729B0EEAB00151CEF /* Cell2.swift */,
+				8FAFA4C929B0EEB500151CEF /* Cell3.swift */,
 				8F24E82629AF4FBC00567261 /* Header.swift */,
 				8FD9226629AE38CA00CC2176 /* Main.storyboard */,
 				8FD9226929AE38CC00CC2176 /* Assets.xcassets */,
@@ -226,8 +235,11 @@
 				8F24E82129AF3ED100567261 /* DataManager.swift in Sources */,
 				8FD9226129AE38CA00CC2176 /* AppDelegate.swift in Sources */,
 				8FD9226329AE38CA00CC2176 /* SceneDelegate.swift in Sources */,
+				8FAFA4C629B0ED7A00151CEF /* Layout.swift in Sources */,
+				8FAFA4C829B0EEAB00151CEF /* Cell2.swift in Sources */,
 				8F24E82329AF454700567261 /* PreView.swift in Sources */,
-				8F24E82529AF4D6100567261 /* Cell.swift in Sources */,
+				8F24E82529AF4D6100567261 /* Cell1.swift in Sources */,
+				8FAFA4CA29B0EEB500151CEF /* Cell3.swift in Sources */,
 				8FD9227529AE38EE00CC2176 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
