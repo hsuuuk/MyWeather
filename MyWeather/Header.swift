@@ -1,17 +1,18 @@
 //
-//  FirstCell.swift
+//  Header.swift
 //  MyWeather
 //
 //  Created by 심현석 on 2023/03/01.
 //
 
 import UIKit
+import SnapKit
 
-class Cell: UICollectionViewCell {
+class Header: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .systemGray6
+        backgroundColor = .systemGray
     }
     
     required init?(coder: NSCoder) {

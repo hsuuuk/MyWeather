@@ -7,90 +7,44 @@
 
 import Foundation
 
-// MARK: - WeatherResponse
-struct WeatherResponse: Codable {
-    let latitude, longitude: Double
-    let timezone: String
-    let currently: Currently
-    let hourly: Hourly
-    let daily: Daily
-    let offset: Int
+// MARK: - JSONData
+struct JSONData: Codable {
+    let response: Response
 }
 
-// MARK: - Currently
-struct Currently: Codable {
-    let time: Int
-    let summary: Summary
-    let icon: Icon
-    let precipIntensity, precipProbability, temperature, apparentTemperature: Double
-    let dewPoint, humidity, pressure, windSpeed: Double
-    let windGust: Double
-    let windBearing: Int
-    let cloudCover: Double
-    let uvIndex, visibility: Int
-    let ozone: Double
-    let precipType: Icon?
+// MARK: - Response
+struct Response: Codable {
+    let body: Body
 }
 
-enum Icon: String, Codable {
-    case clearDay = "clear-day"
-    case cloudy = "cloudy"
-    case partlyCloudyDay = "partly-cloudy-day"
-    case partlyCloudyNight = "partly-cloudy-night"
-    case rain = "rain"
+// MARK: - Body
+struct Body: Codable {
+    let items: Items
 }
 
-enum Summary: String, Codable {
-    case mostlyCloudy = "Mostly Cloudy"
-    case overcast = "Overcast"
-    case partlyCloudy = "Partly Cloudy"
-    case possibleDrizzle = "Possible Drizzle"
-    case possibleLightRain = "Possible Light Rain"
+// MARK: - Items
+struct Items: Codable {
+    let item: [Item]
 }
 
-// MARK: - Daily
-struct Daily: Codable {
-    let summary: String
-    let icon: Icon
-    let data: [Datum]
-}
+// MARK: - Item
+struct Item: Codable {
+    let regID: String
+    let taMin3, taMin3Low, taMin3High, taMax3: Int
+    let taMax3Low, taMax3High, taMin4, taMin4Low: Int
+    let taMin4High, taMax4, taMax4Low, taMax4High: Int
+    let taMin5, taMin5Low, taMin5High, taMax5: Int
+    let taMax5Low, taMax5High, taMin6, taMin6Low: Int
+    let taMin6High, taMax6, taMax6Low, taMax6High: Int
+    let taMin7, taMin7Low, taMin7High, taMax7: Int
+    let taMax7Low, taMax7High, taMin8, taMin8Low: Int
+    let taMin8High, taMax8, taMax8Low, taMax8High: Int
+    let taMin9, taMin9Low, taMin9High, taMax9: Int
+    let taMax9Low, taMax9High, taMin10, taMin10Low: Int
+    let taMin10High, taMax10, taMax10Low, taMax10High: Int
 
-// MARK: - Datum
-struct Datum: Codable {
-    let time: Int
-    let summary: String
-    let icon: String
-    let sunriseTime, sunsetTime: Int
-    let moonPhase, precipIntensity, precipIntensityMax, precipProbability: Double
-    let temperatureHigh: Double
-    let temperatureHighTime: Int
-    let temperatureLow: Double
-    let temperatureLowTime: Int
-    let apparentTemperatureHigh: Double
-    let apparentTemperatureHighTime: Int
-    let apparentTemperatureLow: Double
-    let apparentTemperatureLowTime: Int
-    let dewPoint, humidity, pressure, windSpeed: Double
-    let windGust: Double
-    let windGustTime, windBearing: Int
-    let cloudCover: Double
-    let uvIndex, uvIndexTime, visibility: Int
-    let ozone, temperatureMin: Double
-    let temperatureMinTime: Int
-    let temperatureMax: Double
-    let temperatureMaxTime: Int
-    let apparentTemperatureMin: Double
-    let apparentTemperatureMinTime: Int
-    let apparentTemperatureMax: Double
-    let apparentTemperatureMaxTime: Int
-    let precipIntensityMaxTime: Int?
-    let precipType: Icon?
+    enum CodingKeys: String, CodingKey {
+        case regID = "regId"
+        case taMin3, taMin3Low, taMin3High, taMax3, taMax3Low, taMax3High, taMin4, taMin4Low, taMin4High, taMax4, taMax4Low, taMax4High, taMin5, taMin5Low, taMin5High, taMax5, taMax5Low, taMax5High, taMin6, taMin6Low, taMin6High, taMax6, taMax6Low, taMax6High, taMin7, taMin7Low, taMin7High, taMax7, taMax7Low, taMax7High, taMin8, taMin8Low, taMin8High, taMax8, taMax8Low, taMax8High, taMin9, taMin9Low, taMin9High, taMax9, taMax9Low, taMax9High, taMin10, taMin10Low, taMin10High, taMax10, taMax10Low, taMax10High
+    }
 }
-
-// MARK: - Hourly
-struct Hourly: Codable {
-    let summary: String
-    let icon: String
-    let data: [Currently]
-}
-
